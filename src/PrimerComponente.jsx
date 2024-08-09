@@ -1,11 +1,5 @@
-import React from 'react'
-
-const PrimerComponente = () => {
-  return (
-    <div>
-      <h1>Hola Mundo</h1>
-    </div>
-  )
+export const PrimerComponente = () => {
+    return (
+        <h1>Hola Mundo corregido</h1>
+    )
 }
-
-export default PrimerComponente
