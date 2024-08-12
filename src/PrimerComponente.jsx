@@ -10,6 +10,14 @@ const objeto = { nombre: 'Curso de react', duracion: 4 }
 
 export const PrimerComponente = () => {
     return (
-        <p>{ JSON.stringify(fecha) }</p>  /*  Igual para objeto p/e JSON.stringify(fecha) */
+        <>
+            <p>Variable tipo String: {string}</p>
+            <p>Variable tipo Number: {number}</p>
+            <p>Variable tipo Array: {array}</p>
+            <p>Variable tipo Boolean: {boolean}</p>
+            <p>Variable tipo Fecha: { JSON.stringify(fecha) }</p> 
+            <p>Variable tipo Objeto: { JSON.stringify(objeto) }</p>
+        </>
+        
     )
 }
