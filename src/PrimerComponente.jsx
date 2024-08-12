@@ -1,4 +1,6 @@
 import './PrimerComponente.css'
+import PropTypes from 'prop-types'
+
 
 const string = 'Esto es un string'
 const number = 12345
@@ -10,9 +12,14 @@ const objeto = { nombre: 'Curso de react', duracion: 4 }
 
 
 
-export const PrimerComponente = () => {
+
+
+
+export const PrimerComponente = ({ titulo, subtitulo = 'Seccion de Props' }) => {
     return (
         <>
+            <h1>{titulo}</h1>
+            <h2>{subtitulo}</h2> 
             <p>Variable tipo String: {string}</p>
             <p>Variable tipo Number: {number}</p>
             <p>Variable tipo Array: {array}</p>
@@ -22,4 +29,9 @@ export const PrimerComponente = () => {
         </>
         
     )
+}
+
+PrimerComponente.propTypes = {
+    titulo: PropTypes.string.isRequired,
+    subtitulo: PropTypes.string.isRequired
 }
