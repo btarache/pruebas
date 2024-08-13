@@ -2,6 +2,7 @@ import './PrimerComponente.css'
 import PropTypes from 'prop-types'
 
 
+
 const string = 'Esto es un string'
 const number = 12345
 const array = ['Curso de React', 4]
