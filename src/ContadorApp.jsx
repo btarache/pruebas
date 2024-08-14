@@ -12,7 +12,7 @@ export const ContadorApp = ({ value }) => {
 
     return (
         <>
-            <h1>Contador: </h1>
+            <h1 className='espacio'>Contador: </h1>
             <p>{contador}</p>
             <button onClick={handleClick}>
                 Boton

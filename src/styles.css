@@ -3,3 +3,8 @@ body,html {
     color: white;
     
 }
+
+.espacio {
+    border-top: thin solid #fff;
+    padding: 2rem 1rem 0;
+}

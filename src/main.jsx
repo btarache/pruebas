@@ -8,10 +8,12 @@ import { ContadorApp } from './ContadorApp'
 import { ListadoApp } from './ListadoApp'
 
 
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <PrimerComponente titulo='Esta seccion es de PROPS - Titulo' subtitulo='Subtitulo de Props'/>
     <ContadorApp value={0}/>
     <ListadoApp />
-  </StrictMode>,
+   
+  </StrictMode>
 )
