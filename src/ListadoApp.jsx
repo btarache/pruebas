@@ -1,6 +1,7 @@
 /* MAPS */
 import React from 'react' /** Esto ya no se usa */
 import { useState } from 'react'
+import { AgregarTarea } from './components/AgregarTarea'
 
 const Item = ({nombre, visto}) => {
     return(
@@ -36,6 +37,8 @@ export const ListadoApp = () => {
                 {arreglo.map(item => <Item key={item.nombre}  nombre={item.nombre} visto={item.visto}></Item>)}
                 
             </ol>
+
+            <AgregarTarea></AgregarTarea>
             <button onClick={() => addTask()}>AGREGAR</button>
         </>
     )
