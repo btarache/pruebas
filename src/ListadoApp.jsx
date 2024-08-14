@@ -38,7 +38,7 @@ export const ListadoApp = () => {
                 
             </ol>
 
-            <AgregarTarea></AgregarTarea>
+            <AgregarTarea agregarTarea={setArreglo}></AgregarTarea>
             <button onClick={() => addTask()}>AGREGAR</button>
         </>
     )
