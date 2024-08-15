@@ -8,13 +8,14 @@ export const AgregarTarea = ({ agregarTarea }) => {
     }
     const onSubmit = (event) => {
 
-            event.preventDefault()
-            agregarTarea(inputValue)
-        
+        const envio = {
+            nombre: inputValue,
+            visto: false
+        }
 
-        /* event.preventDefault()   /* /* PREVENT DEFAULT PARA QUE NO SE ACTUALICE LA PAG AL INGRESAR DATA AL INPUT */
+        event.preventDefault()   /* PREVENT DEFAULT PARA QUE NO SE ACTUALICE LA PAG AL INGRESAR DATA AL INPUT */
         
-        /* agregarTarea(tareas => [...tareas, envio]) */
+        agregarTarea(tareas => [...tareas, envio])
     }
   
     return (
